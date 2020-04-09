@@ -31,11 +31,13 @@ positive_tests = [n for n in positive_tests if n > 50]
 
 deaths = tree.xpath("//td/strong[text()='Positive']/following::td/strong[text()='Deaths'][1]/following::tr[1]/td[3]")
 deaths = [int(n.text) for n in deaths if is_int(n.text)]
+# Don't ask me why this last entry for deaths is missing...
+deaths.append(2)
 
-
-for n, p, d in zip(negative_tests, positive_tests, deaths):
-  s = 'Negative: {} Positive: {}, Deaths: {}'.format(n, p, d)
-  print(s)
+if __name__ == '__main__':
+  for n, p, d in zip(negative_tests, positive_tests, deaths):
+    s = 'Negative: {} Positive: {}, Deaths: {}'.format(n, p, d)
+    print(s)
 
 
 
