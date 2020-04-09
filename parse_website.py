@@ -4,6 +4,7 @@ Program to scrape health.pa.gov/topics/disease/coronavirus/Pages/Archives.aspx
 for data on daily testing rate in comparison with covid-19 cases
 """
 
+# TODO re-scrape site for dates!
 # Not sure why vscode is still flagging lxml.  It is working now...
 # steps to fix module not found error:  pip3 install instead of pip install
 from lxml import html

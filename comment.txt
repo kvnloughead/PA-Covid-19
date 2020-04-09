@@ -1,0 +1,5 @@
+Well, I guess it is what I usually use, but last night was the first time that I ran jupyter on vscode.    And like I said it worked then, but not now.   Can I ask:  the kernel ought to start automatically upon startup, or is the some action required by user?   And what interpreter should I select?   The only version 3 interpreter I have available is the one I am using.
+
+Update.
+
+Since first posting I tried exporting the path to Jupyter to my PATH with `export PATH="~/usr/bin/jupyter:$PATH"`.   After that, I noticed that I now have a python3.7 interpreter available (3.7.5).  Not sure if the former was causal.   After selecting this interpreter I was prompted to install some data science extension, which I did.   I then reloaded vscode, but am still receiving the same message.   Console printout is attached.

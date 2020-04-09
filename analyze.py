@@ -61,3 +61,5 @@ df = pd.DataFrame(data)
 
 if __name__ == '__main__':
         print(tabulate(df, headers='keys', tablefmt='psql'))
+
+cases_growth_rate_change = [(p / q) - 1 for p, q in zip(nominal_growth_rate[:-1], nominal_growth_rate[1:])]
